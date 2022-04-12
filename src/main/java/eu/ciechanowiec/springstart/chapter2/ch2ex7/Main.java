@@ -1,4 +1,4 @@
-package eu.ciechanowiec.springstart.ch2ex2;
+package eu.ciechanowiec.springstart.chapter2.ch2ex7;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -12,11 +12,7 @@ class Main {
                 new AnnotationConfigApplicationContext(ProjectConfig.class);
 
         Parrot parrot = context.getBean(Parrot.class);
-        String hello = context.getBean(String.class);
-        Integer ten = context.getBean(Integer.class);
-
-        System.out.println(parrot.name());
-        System.out.println(hello);
-        System.out.println(ten);
+        System.out.println(parrot);
+        System.out.println(parrot.getName());
     }
-}		
+}

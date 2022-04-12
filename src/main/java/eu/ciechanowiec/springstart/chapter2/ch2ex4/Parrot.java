@@ -1,4 +1,4 @@
-package eu.ciechanowiec.springstart.ch2ex2;
+package eu.ciechanowiec.springstart.chapter2.ch2ex4;
 
 /**
  * @author Herman Ciechanowiec

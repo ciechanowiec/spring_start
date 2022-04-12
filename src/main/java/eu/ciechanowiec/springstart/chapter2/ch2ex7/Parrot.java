@@ -1,4 +1,4 @@
-package eu.ciechanowiec.springstart.ch2ex7;
+package eu.ciechanowiec.springstart.chapter2.ch2ex7;
 
 import org.springframework.stereotype.Component;
 
