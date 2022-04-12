@@ -1,0 +1,16 @@
+# All files with .class extension:
+*.class
+
+# All files with .log extension + file named 'logs.txt':
+*.log
+logs.txt
+
+# 'target' directory located directly in the project directory:
+/target
+
+# All files and directories which names start with . (dot), 
+# except .git, .gitattributes and .gitignore:
+.*
+!/.git
+!.gitattributes
+!.gitignore
