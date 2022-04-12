@@ -93,7 +93,7 @@
               <addClasspath>true</addClasspath>
 	          <classpathPrefix>lib/</classpathPrefix> <!-- enables usage of dependencies from .jar
                                                            by copying them into the target folder -->
-              <mainClass>eu.ciechanowiec.springstart.sqch2ex2.Main</mainClass>
+              <mainClass>eu.ciechanowiec.springstart.ch2ex2.Main</mainClass>
             </manifest>
           </archive>
         </configuration>

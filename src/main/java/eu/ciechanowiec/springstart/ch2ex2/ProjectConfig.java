@@ -1,4 +1,4 @@
-package eu.ciechanowiec.springstart.sqch2ex2;
+package eu.ciechanowiec.springstart.ch2ex2;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
