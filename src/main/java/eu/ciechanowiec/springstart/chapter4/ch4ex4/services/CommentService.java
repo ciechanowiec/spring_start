@@ -1,14 +1,13 @@
-package eu.ciechanowiec.springstart.chapter4.ch4ex1.services;
+package eu.ciechanowiec.springstart.chapter4.ch4ex4.services;
 
-import eu.ciechanowiec.springstart.chapter4.ch4ex1.model.Comment;
-import eu.ciechanowiec.springstart.chapter4.ch4ex1.proxies.CommentNotificationProxy;
-import eu.ciechanowiec.springstart.chapter4.ch4ex1.repositories.CommentRepository;
-import org.springframework.stereotype.Component;
+import eu.ciechanowiec.springstart.chapter4.ch4ex4.model.Comment;
+import eu.ciechanowiec.springstart.chapter4.ch4ex4.proxies.CommentNotificationProxy;
+import eu.ciechanowiec.springstart.chapter4.ch4ex4.repositories.CommentRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * @author Herman Ciechanowiec
  */
-@Component
 public class CommentService {
 
     private final CommentRepository commentRepository;
