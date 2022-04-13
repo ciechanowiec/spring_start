@@ -1,4 +1,4 @@
-# Spring Start Here
+# Spring Start Here - Exercises
 
 This project contains completed exercises from the book _Spring Start Here_ by L. Spilcă (2021).
 
