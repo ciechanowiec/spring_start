@@ -4,7 +4,6 @@ import eu.ciechanowiec.springstart.chapter4.ch4ex7.model.Comment;
 import eu.ciechanowiec.springstart.chapter4.ch4ex7.proxies.CommentNotificationProxy;
 import eu.ciechanowiec.springstart.chapter4.ch4ex7.repositories.CommentRepository;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 /**

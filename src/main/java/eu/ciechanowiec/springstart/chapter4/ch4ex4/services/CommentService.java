@@ -3,7 +3,6 @@ package eu.ciechanowiec.springstart.chapter4.ch4ex4.services;
 import eu.ciechanowiec.springstart.chapter4.ch4ex4.model.Comment;
 import eu.ciechanowiec.springstart.chapter4.ch4ex4.proxies.CommentNotificationProxy;
 import eu.ciechanowiec.springstart.chapter4.ch4ex4.repositories.CommentRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * @author Herman Ciechanowiec

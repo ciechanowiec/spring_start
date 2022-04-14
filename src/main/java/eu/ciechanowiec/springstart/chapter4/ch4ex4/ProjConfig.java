@@ -1,10 +1,10 @@
 package eu.ciechanowiec.springstart.chapter4.ch4ex4;
 
 import eu.ciechanowiec.springstart.chapter4.ch4ex4.proxies.CommentNotificationProxy;
-import eu.ciechanowiec.springstart.chapter4.ch4ex4.repositories.CommentRepository;
-import eu.ciechanowiec.springstart.chapter4.ch4ex4.services.CommentService;
 import eu.ciechanowiec.springstart.chapter4.ch4ex4.proxies.EmailCommentNotificationProxy;
+import eu.ciechanowiec.springstart.chapter4.ch4ex4.repositories.CommentRepository;
 import eu.ciechanowiec.springstart.chapter4.ch4ex4.repositories.DBCommentRepository;
+import eu.ciechanowiec.springstart.chapter4.ch4ex4.services.CommentService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
