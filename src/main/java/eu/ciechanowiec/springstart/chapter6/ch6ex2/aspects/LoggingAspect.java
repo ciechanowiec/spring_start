@@ -22,11 +22,11 @@ public class LoggingAspect {
         Object[] arguments = joinPoint.getArgs();
 
         Logger.info("Method " + methodName +
-                    " with parameters " + Arrays.asList(arguments) +
-                    "will be executed...");
+                " with parameters " + Arrays.asList(arguments) +
+                "will be executed...");
         Object returnedByMethod = joinPoint.proceed();
 
-        Logger.info("Method has been executed and returned: " + returnedByMethod);
+        Logger.info("Method has been executed and returned + " + returnedByMethod);
 
         return returnedByMethod;
     }
