@@ -1,4 +1,4 @@
-package eu.ciechanowiec.springstart.chapter6.ch6ex2;
+package eu.ciechanowiec.springstart.chapter6.ch6ex4;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

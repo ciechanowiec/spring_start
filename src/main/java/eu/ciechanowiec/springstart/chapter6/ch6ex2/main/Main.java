@@ -1,5 +1,6 @@
-package eu.ciechanowiec.springstart.chapter6.ch6ex2;
+package eu.ciechanowiec.springstart.chapter6.ch6ex2.main;
 
+import eu.ciechanowiec.springstart.chapter6.ch6ex2.ProjConfig;
 import eu.ciechanowiec.springstart.chapter6.ch6ex2.model.Comment;
 import eu.ciechanowiec.springstart.chapter6.ch6ex2.services.CommentService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -18,7 +19,7 @@ class Main {
 
         Comment comment = new Comment();
         comment.setText("Demo comment");
-        comment.setText("Natalia");
+        comment.setAuthor("Natalia");
 
         String value = commentService.publishComment(comment);
 

@@ -18,7 +18,7 @@ class Main {
 
         Comment comment = new Comment();
         comment.setText("Demo comment");
-        comment.setText("Natalia");
+        comment.setAuthor("Natalia");
 
         String value = commentService.publishComment(comment);
 

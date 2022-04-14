@@ -1,8 +1,10 @@
-package eu.ciechanowiec.springstart.chapter6.ch6ex1;
+package eu.ciechanowiec.springstart.chapter6.ch6ex4.main;
 
-import eu.ciechanowiec.springstart.chapter6.ch6ex1.model.Comment;
-import eu.ciechanowiec.springstart.chapter6.ch6ex1.services.CommentService;
+import eu.ciechanowiec.springstart.chapter6.ch6ex4.ProjConfig;
+import eu.ciechanowiec.springstart.chapter6.ch6ex4.model.Comment;
+import eu.ciechanowiec.springstart.chapter6.ch6ex4.service.CommentService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.tinylog.Logger;
 
 /**
  * @author Herman Ciechanowiec
@@ -20,5 +22,7 @@ class Main {
         comment.setAuthor("Natalia");
 
         commentService.publishComment(comment);
+        commentService.deleteComment(comment);
+        commentService.editComment(comment);
     }
 }
