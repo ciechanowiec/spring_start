@@ -11,6 +11,6 @@ class MainController {
 
     @RequestMapping("/home")
     public String home() {
-        return "home.html";
+        return "homech7ex1.html";
     }
 }
