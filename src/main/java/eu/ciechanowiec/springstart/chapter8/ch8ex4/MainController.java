@@ -1,7 +1,8 @@
-package eu.ciechanowiec.springstart.chapter8.ch8ex3;
+package eu.ciechanowiec.springstart.chapter8.ch8ex4;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -11,12 +12,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 class MainController {
 
-    @RequestMapping("/home")
-    String home(@RequestParam(required = false) String color,
-                @RequestParam(required = false) String username,
+    @RequestMapping("/home/{color}")
+    String home(@PathVariable String color,
                 Model page) {
         page.addAttribute("color", color);
-        page.addAttribute("username", username);
-        return "homech8ex3.html";
+        page.addAttribute("username", "Katy");
+        return "homech8ex4.html";
     }
 }
+
