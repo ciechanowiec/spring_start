@@ -1,4 +1,4 @@
-package eu.ciechanowiec.springstart.chapter9.ch9ex1;
+package eu.ciechanowiec.springstart.chapter9.ch9ex2;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -11,14 +11,14 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author Herman Ciechanowiec
  */
 @Controller
-class LoginController {
+public class LoginController {
 
     @Autowired
     private LoginProcessor loginProcessor;
 
     @GetMapping("/")
     String loginGet() {
-        return "ch9ex1_login.html";
+        return "ch9ex2_login.html";
     }
 
     @PostMapping("/")
@@ -30,11 +30,10 @@ class LoginController {
         boolean loggedIn = loginProcessor.login();
 
         if (loggedIn) {
-            model.addAttribute("message", "You are now logged in.");
+            return "redirect:/main";
         } else {
             model.addAttribute("message", "Login failed!");
+            return "ch9ex2_login.html";
         }
-
-        return "ch9ex1_login.html";
     }
 }

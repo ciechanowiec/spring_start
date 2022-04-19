@@ -4,7 +4,9 @@ import eu.ciechanowiec.springstart.chapter8.ch8ex5.model.Product;
 import eu.ciechanowiec.springstart.chapter8.ch8ex5.service.ProductService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 

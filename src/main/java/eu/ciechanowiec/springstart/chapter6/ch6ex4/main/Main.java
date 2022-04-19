@@ -4,7 +4,6 @@ import eu.ciechanowiec.springstart.chapter6.ch6ex4.ProjConfig;
 import eu.ciechanowiec.springstart.chapter6.ch6ex4.model.Comment;
 import eu.ciechanowiec.springstart.chapter6.ch6ex4.service.CommentService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.tinylog.Logger;
 
 /**
  * @author Herman Ciechanowiec

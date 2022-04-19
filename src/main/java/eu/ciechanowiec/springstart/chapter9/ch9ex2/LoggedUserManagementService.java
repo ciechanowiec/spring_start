@@ -8,7 +8,7 @@ import org.springframework.web.context.annotation.SessionScope;
  */
 @Service
 @SessionScope
-class LoggedUserManagementService {
+public class LoggedUserManagementService {
 
     private String username;
 

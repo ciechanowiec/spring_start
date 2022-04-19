@@ -1,7 +1,7 @@
 package eu.ciechanowiec.springstart.chapter5.ch5ex4.main;
 
-import eu.ciechanowiec.springstart.chapter5.ch5ex4.services.CommentService;
 import eu.ciechanowiec.springstart.chapter5.ch5ex4.ProjConfig;
+import eu.ciechanowiec.springstart.chapter5.ch5ex4.services.CommentService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**

@@ -1,6 +1,5 @@
 package eu.ciechanowiec.springstart.chapter6.ch6ex4.aspect;
 
-import eu.ciechanowiec.springstart.chapter6.ch6ex4.model.Comment;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
