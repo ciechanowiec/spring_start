@@ -11,6 +11,6 @@ class MainController {
     public String home(Model page) {
         page.addAttribute("username", "Katy");
         page.addAttribute("color", "red");
-        return "homech8ex1.html";
+        return "ch8ex1_home.html";
     }
 }

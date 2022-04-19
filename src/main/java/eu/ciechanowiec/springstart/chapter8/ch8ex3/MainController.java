@@ -17,6 +17,6 @@ class MainController {
                 Model page) {
         page.addAttribute("color", color);
         page.addAttribute("username", username);
-        return "homech8ex3.html";
+        return "ch8ex3_home.html";
     }
 }

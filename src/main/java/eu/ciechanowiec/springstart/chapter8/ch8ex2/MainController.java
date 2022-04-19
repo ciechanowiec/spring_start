@@ -15,6 +15,6 @@ class MainController {
     String home(@RequestParam String color, Model page) {
         page.addAttribute("username", "Katy");
         page.addAttribute("color", color);
-        return "homech8ex2.html";
+        return "ch8ex2_home.html";
     }
 }

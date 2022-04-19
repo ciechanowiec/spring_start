@@ -26,7 +26,7 @@ public class ProductsController {
         List<Product> products = productService.findAll();
         model.addAttribute("products", products);
 
-        return "productsch8ex5.html";
+        return "ch8ex5_products.html";
     }
 
     @PostMapping(path = "/products")
@@ -37,6 +37,6 @@ public class ProductsController {
         List<Product> products = productService.findAll();
         model.addAttribute("products", products);
 
-        return "productsch8ex5.html";
+        return "ch8ex6_products.html";
     }
 }
