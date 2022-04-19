@@ -1,4 +1,4 @@
-package eu.ciechanowiec.springstart.chapter11.ch11payments;
+package eu.ciechanowiec.springstart.chapter11.ch11ex1;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,9 +9,11 @@ import java.util.Collections;
  * @author Herman Ciechanowiec
  */
 @SpringBootApplication
-class Main {
+public class Main {
 
     public static void main(String[] args) {
-        SpringApplication.run(Main.class, args);
+        SpringApplication app = new SpringApplication(Main.class);
+        app.setDefaultProperties(Collections.singletonMap("server.port", "9090"));
+        app.run(args);
     }
 }
