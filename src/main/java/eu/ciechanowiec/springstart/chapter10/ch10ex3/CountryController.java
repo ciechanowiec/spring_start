@@ -11,18 +11,18 @@ import java.util.List;
 @RestController
 class CountryController {
 
-    private final int FRANCE_POPULATION = 67;
-    private final int SPAIN_POPULATION = 47;
+    private final int francePopulation = 67;
+    private final int spainPopulation = 47;
 
     @GetMapping("/france")
     Country france() {
-        return Country.of("France", FRANCE_POPULATION);
+        return Country.of("France", francePopulation);
     }
 
     @GetMapping("/all")
     List<Country> countries() {
-        Country france = Country.of("France", FRANCE_POPULATION);
-        Country spain = Country.of("Spain", SPAIN_POPULATION);
+        Country france = Country.of("France", francePopulation);
+        Country spain = Country.of("Spain", spainPopulation);
         return List.of(france, spain);
     }
 }
