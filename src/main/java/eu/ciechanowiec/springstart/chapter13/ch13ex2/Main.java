@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class Main {
 
-    /* To make this example work:
+    /* A. To make this example work:
         1. Add the following dependency to pom.xml:
             <dependency>
               <groupId>com.h2database</groupId>
@@ -17,11 +17,15 @@ public class Main {
               <scope>runtime</scope>
             </dependency>
         2. Add the following content to the resources/schema.sql:
-            CREATE TABLE IF NOT EXISTS purchase (
-                 id INT AUTO_INCREMENT PRIMARY KEY,
-                 product varchar(50) NOT NULL,
-                 price double NOT NULL
-             );
+            CREATE TABLE IF NOT EXISTS account (
+                id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                name VARCHAR(50) NOT NULL,
+                amount DOUBLE NOT NULL
+            );
+       B. According to the book (p. 313) names of the
+          default customers are "Jane Down" and "John Read".
+          In this application, however, different names are
+          used (see resources/data.sql)
     */
     public static void main(String[] args) {
         SpringApplication.run(Main.class, args);

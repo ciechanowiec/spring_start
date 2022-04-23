@@ -1,4 +1,4 @@
-package eu.ciechanowiec.springstart.chapter13.ch13ex1;
+package eu.ciechanowiec.springstart.chapter14.ch14ex1;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,6 +11,10 @@ public class Main {
 
     /* To make this example work:
         1. Add the following dependency to pom.xml:
+            <dependency>
+              <groupId>org.springframework.boot</groupId>
+              <artifactId>spring-boot-starter-data-jdbc</artifactId>
+            </dependency>
             <dependency>
               <groupId>com.h2database</groupId>
               <artifactId>h2</artifactId>
