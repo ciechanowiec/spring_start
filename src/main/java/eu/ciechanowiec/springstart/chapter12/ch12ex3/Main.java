@@ -1,4 +1,4 @@
-package eu.ciechanowiec.springstart.chapter12.ch12ex2;
+package eu.ciechanowiec.springstart.chapter12.ch12ex3;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -20,12 +20,11 @@ public class Main {
            username = root
            password = password
        3. Add the following content to the resources/application.properties:
-           spring.datasource.url = jdbc:mysql://localhost/testdb
-           spring.datasource.username = root
-           spring.datasource.password = password
+           custom.datasource.url = jdbc:mysql://localhost/testdb
+           custom.datasource.username = root
+           custom.datasource.password = password
            spring.datasource.initialization-mode = always
     */
-
     public static void main(String[] args) {
         SpringApplication.run(Main.class, args);
     }
