@@ -9,12 +9,12 @@ import org.springframework.web.context.annotation.RequestScope;
 
 @Component
 @RequestScope
-class LoginProcessor {
+public class LoginProcessor {
 
     private String username;
     private String password;
 
-    boolean login() {
+    public boolean login() {
         String username = this.getUsername();
         String password = this.getPassword();
 
