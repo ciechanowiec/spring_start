@@ -24,6 +24,12 @@ public class Main {
            custom.datasource.username = root
            custom.datasource.password = password
            spring.datasource.initialization-mode = always
+       4. Add the following content to the resources/schema.sql:
+            CREATE TABLE IF NOT EXISTS purchase (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                product varchar(50) NOT NULL,
+                price double NOT NULL
+            );
     */
     public static void main(String[] args) {
         SpringApplication.run(Main.class, args);
