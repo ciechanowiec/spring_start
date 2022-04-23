@@ -20,5 +20,4 @@ public class Product {
     public double price() {
         return price;
     }
-
 }

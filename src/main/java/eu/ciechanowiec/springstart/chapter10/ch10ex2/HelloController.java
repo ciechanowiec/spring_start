@@ -7,15 +7,15 @@ import org.springframework.web.bind.annotation.RestController;
  * @author Herman Ciechanowiec
  */
 @RestController
-class HelloController {
+public class HelloController {
 
     @GetMapping("/hello")
-    String hello() {
+    public String hello() {
         return "Hello!";
     }
 
     @GetMapping("/ciao")
-    String ciao() {
+    public String ciao() {
         return "Ciao!";
     }
 }

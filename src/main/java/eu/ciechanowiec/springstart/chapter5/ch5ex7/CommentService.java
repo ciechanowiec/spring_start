@@ -8,12 +8,12 @@ import org.springframework.stereotype.Service;
  * @author Herman Ciechanowiec
  */
 @Service
-class CommentService {
+public class CommentService {
 
     @Autowired
     private ApplicationContext applicationContext;
 
-    void sendComment(Comment comment) {
+    public void sendComment(Comment comment) {
         CommentProcessor commentProcessor =
                 applicationContext.getBean(CommentProcessor.class);
 

@@ -7,11 +7,10 @@ import org.springframework.context.annotation.Configuration;
  * @author Herman Ciechanowiec
  */
 @Configuration
-class ProjConfig {
+public class ProjConfig {
 
     @Bean
-    CommentService commentService() {
+    public CommentService commentService() {
         return new CommentService();
     }
-
 }

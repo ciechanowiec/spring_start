@@ -7,13 +7,13 @@ import org.springframework.stereotype.Component;
  * @author Herman Ciechanowiec
  */
 @Component
-class Person {
+public class Person {
 
     private final String name = "Ella";
 
     private final Parrot parrot;
 
-    Person(@Qualifier("parrot2") Parrot parrot) {
+    public Person(@Qualifier("parrot2") Parrot parrot) {
         this.parrot = parrot;
     }
 

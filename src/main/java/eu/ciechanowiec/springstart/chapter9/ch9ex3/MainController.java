@@ -10,19 +10,19 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author Herman Ciechanowiec
  */
 @Controller
-class MainController {
+public class MainController {
 
     private final LoggedUserManagementService loggedUserManagementService;
     private final LoginCountService loginCountService;
 
     @Autowired
-    MainController(LoggedUserManagementService loggedUserManagementService, LoginCountService loginCountService) {
+    public MainController(LoggedUserManagementService loggedUserManagementService, LoginCountService loginCountService) {
         this.loggedUserManagementService = loggedUserManagementService;
         this.loginCountService = loginCountService;
     }
 
     @GetMapping("/main")
-    String home(@RequestParam(required = false) String logout,
+    public String home(@RequestParam(required = false) String logout,
                        Model model) {
         if (logout != null) {
             loggedUserManagementService.setUsername(null);

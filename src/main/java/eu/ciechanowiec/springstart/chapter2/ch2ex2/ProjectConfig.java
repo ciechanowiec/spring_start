@@ -8,20 +8,20 @@ import org.springframework.context.annotation.Configuration;
  */
 
 @Configuration
-class ProjectConfig {
+public class ProjectConfig {
 
     @Bean
-    Parrot parrot() {
+    public Parrot parrot() {
         return new Parrot("Koko");
     }
 
     @Bean
-    String hello() {
+    public String hello() {
         return "Hello!";
     }
 
     @Bean
-    Integer ten() {
+    public Integer ten() {
         return 10;
     }
 }

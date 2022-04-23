@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
  * @author Herman Ciechanowiec
  */
 @Component
-class Person {
+public class Person {
 
     private String name = "Ella";
     private Parrot parrot;

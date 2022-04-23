@@ -3,7 +3,7 @@ package eu.ciechanowiec.springstart.chapter2.ch2ex8;
 /**
  * @author Herman Ciechanowiec
  */
-class Parrot {
+public class Parrot {
 
     private String name;
 

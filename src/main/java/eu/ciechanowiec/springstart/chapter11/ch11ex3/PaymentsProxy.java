@@ -31,5 +31,4 @@ public class PaymentsProxy {
                         .retrieve()
                         .bodyToMono(Payment.class);
     }
-
 }

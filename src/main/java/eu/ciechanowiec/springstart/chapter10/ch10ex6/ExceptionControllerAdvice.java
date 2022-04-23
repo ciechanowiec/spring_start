@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
  * @author Herman Ciechanowiec
  */
 @RestControllerAdvice
-class ExceptionControllerAdvice {
+public class ExceptionControllerAdvice {
 
     @ExceptionHandler(NotEnoughMoneyException.class)
     public ResponseEntity<ErrorDetails> exceptionNotEnoughMoneyHandler() {

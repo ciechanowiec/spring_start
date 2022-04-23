@@ -9,18 +9,18 @@ import java.util.List;
  * @author Herman Ciechanowiec
  */
 @RestController
-class CountryController {
+public class CountryController {
 
     private final int francePopulation = 67;
     private final int spainPopulation = 47;
 
     @GetMapping("/france")
-    Country france() {
+    public Country france() {
         return Country.of("France", francePopulation);
     }
 
     @GetMapping("/all")
-    List<Country> countries() {
+    public List<Country> countries() {
         Country france = Country.of("France", francePopulation);
         Country spain = Country.of("Spain", spainPopulation);
         return List.of(france, spain);

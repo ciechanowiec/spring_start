@@ -9,7 +9,7 @@ import org.tinylog.Logger;
 /**
  * @author Herman Ciechanowiec
  */
-class Main {
+public class Main {
 
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context =

@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @ComponentScan
-class ProjConfig {
+public class ProjConfig {
 
     @Bean
     public Parrot parrot1() {
@@ -33,5 +33,4 @@ class ProjConfig {
         person.setParrot(parrot);
         return person;
     }
-
 }

@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
  * @author Herman Ciechanowiec
  */
 @Repository
-class CommentRepository {
+public class CommentRepository {
 }

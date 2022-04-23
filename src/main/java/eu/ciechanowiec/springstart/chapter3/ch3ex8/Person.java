@@ -3,7 +3,7 @@ package eu.ciechanowiec.springstart.chapter3.ch3ex8;
 /**
  * @author Herman Ciechanowiec
  */
-class Person {
+public class Person {
 
     private String name;
 

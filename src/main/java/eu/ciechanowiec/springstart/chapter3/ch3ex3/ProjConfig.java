@@ -7,21 +7,20 @@ import org.springframework.context.annotation.Configuration;
  * @author Herman Ciechanowiec
  */
 @Configuration
-class ProjConfig {
+public class ProjConfig {
 
     @Bean
-    Parrot parrot() {
+    public Parrot parrot() {
         Parrot parrot = new Parrot();
         parrot.setName("Koko");
         return parrot;
     }
 
     @Bean
-    Person person(Parrot parrot) {
+    public Person person(Parrot parrot) {
         Person person = new Person();
         person.setName("Ella");
         person.setParrot(parrot);
         return person;
     }
-
 }

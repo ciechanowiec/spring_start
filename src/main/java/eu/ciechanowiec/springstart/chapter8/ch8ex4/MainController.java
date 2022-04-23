@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @author Herman Ciechanowiec
  */
 @Controller
-class MainController {
+public class MainController {
 
     @RequestMapping("/home/{color}")
-    String home(@PathVariable String color,
+    public String home(@PathVariable String color,
                 Model page) {
         page.addAttribute("color", color);
         page.addAttribute("username", "Katy");

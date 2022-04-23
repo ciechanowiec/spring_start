@@ -8,17 +8,17 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @author Herman Ciechanowiec
  */
 @Controller
-class HelloController {
+public class HelloController {
 
     @RequestMapping("/hello")
     @ResponseBody
-    String hello() {
+    public String hello() {
         return "Hello!";
     }
 
     @RequestMapping("/ciao")
     @ResponseBody
-    String ciao() {
+    public String ciao() {
         return "Ciao!";
     }
 }

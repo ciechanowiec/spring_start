@@ -3,15 +3,15 @@ package eu.ciechanowiec.springstart.chapter2.ch2ex5;
 /**
  * @author Herman Ciechanowiec
  */
-class Parrot {
+public class Parrot {
 
     private final String name;
 
-    Parrot(String name) {
+    public Parrot(String name) {
         this.name = name;
     }
 
-    String name() {
+    public String name() {
         return name;
     }
 }

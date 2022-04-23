@@ -3,11 +3,11 @@ package eu.ciechanowiec.springstart.chapter3.ch3ex3;
 /**
  * @author Herman Ciechanowiec
  */
-class Parrot {
+public class Parrot {
 
     private String name;
 
-    Parrot() {
+    public Parrot() {
         System.out.println("Parrot created");
     }
 

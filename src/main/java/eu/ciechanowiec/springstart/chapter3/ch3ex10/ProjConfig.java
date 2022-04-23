@@ -9,20 +9,19 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @ComponentScan
-class ProjConfig {
+public class ProjConfig {
 
     @Bean
-    Parrot parrot1() {
+    public Parrot parrot1() {
         Parrot parrot = new Parrot();
         parrot.setName("Koko");
         return parrot;
     }
 
     @Bean
-    Parrot parrot2() {
+    public Parrot parrot2() {
         Parrot parrot = new Parrot();
         parrot.setName("Miki");
         return parrot;
     }
-
 }

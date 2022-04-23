@@ -7,7 +7,7 @@ import java.util.function.Supplier;
 /**
  * @author Herman Ciechanowiec
  */
-class Main {
+public class Main {
 
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context =

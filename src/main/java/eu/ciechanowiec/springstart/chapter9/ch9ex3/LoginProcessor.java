@@ -9,7 +9,7 @@ import org.springframework.web.context.annotation.RequestScope;
  */
 @Component
 @RequestScope
-class LoginProcessor {
+public class LoginProcessor {
 
     private final LoggedUserManagementService loggedUserManagementService;
     private final LoginCountService loginCountService;
@@ -18,12 +18,12 @@ class LoginProcessor {
     private String password;
 
     @Autowired
-    LoginProcessor(LoggedUserManagementService loggedUserManagementService, LoginCountService loginCountService) {
+    public LoginProcessor(LoggedUserManagementService loggedUserManagementService, LoginCountService loginCountService) {
         this.loggedUserManagementService = loggedUserManagementService;
         this.loginCountService = loginCountService;
     }
 
-    boolean login() {
+    public boolean login() {
         loginCountService.incrementByOne();
 
         String username = this.getUsername();
@@ -38,19 +38,19 @@ class LoginProcessor {
         return loginResult;
     }
 
-    String getUsername() {
+    public String getUsername() {
         return username;
     }
 
-    void setUsername(String username) {
+    public void setUsername(String username) {
         this.username = username;
     }
 
-    String getPassword() {
+    public String getPassword() {
         return password;
     }
 
-    void setPassword(String password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 }

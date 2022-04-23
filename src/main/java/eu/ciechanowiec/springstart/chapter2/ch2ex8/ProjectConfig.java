@@ -6,5 +6,5 @@ import org.springframework.context.annotation.Configuration;
  * @author Herman Ciechanowiec
  */
 @Configuration
-class ProjectConfig {
+public class ProjectConfig {
 }

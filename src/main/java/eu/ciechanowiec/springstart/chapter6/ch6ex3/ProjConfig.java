@@ -10,5 +10,5 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @Configuration
 @ComponentScan
 @EnableAspectJAutoProxy
-class ProjConfig {
+public class ProjConfig {
 }

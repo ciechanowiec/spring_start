@@ -7,12 +7,12 @@ import org.springframework.stereotype.Component;
  * @author Herman Ciechanowiec
  */
 @Component
-class Parrot {
+public class Parrot {
 
     private final Person person;
 
     @Autowired
-    Parrot(Person person) {
+    public Parrot(Person person) {
         this.person = person;
     }
 }

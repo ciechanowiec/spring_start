@@ -3,12 +3,12 @@ package eu.ciechanowiec.springstart.chapter10.ch10ex4;
 /**
  * @author Herman Ciechanowiec
  */
-class Country {
+public class Country {
 
     private String name;
     private int population;
 
-    static Country of(String name, int population) {
+    public static Country of(String name, int population) {
         Country country = new Country();
         country.setName(name);
         country.setPopulation(population);

@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @RestController
-class CountryController {
+public class CountryController {
 
     private final int francePopulation = 67;
 
     @GetMapping("/france")
-    ResponseEntity<Country> france() {
+    public ResponseEntity<Country> france() {
         Country country = Country.of("France", francePopulation);
         return ResponseEntity
                 .status(HttpStatus.ACCEPTED)

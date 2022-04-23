@@ -8,7 +8,7 @@ import javax.annotation.PostConstruct;
  * @author Herman Ciechanowiec
  */
 @Component
-class Parrot {
+public class Parrot {
 
     private String name;
 

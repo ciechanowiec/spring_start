@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author Herman Ciechanowiec
  */
 @Controller
-class MainController {
+public class MainController {
 
     @RequestMapping("/home")
-    String home(@RequestParam(required = false) String color,
+    public String home(@RequestParam(required = false) String color,
                 @RequestParam(required = false) String username,
                 Model page) {
         page.addAttribute("color", color);

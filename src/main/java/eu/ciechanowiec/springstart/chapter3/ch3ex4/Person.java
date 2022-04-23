@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
  */
 
 @Component
-class Person {
+public class Person {
 
     private String name = "Ella";
 

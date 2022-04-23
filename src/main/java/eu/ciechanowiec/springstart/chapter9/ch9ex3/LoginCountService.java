@@ -8,15 +8,15 @@ import org.springframework.web.context.annotation.ApplicationScope;
  */
 @Service
 @ApplicationScope
-class LoginCountService {
+public class LoginCountService {
 
     private int count;
 
-    void incrementByOne() {
+    public void incrementByOne() {
         count++;
     }
 
-    int getCount() {
+    public int getCount() {
         return count;
     }
 }

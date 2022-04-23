@@ -17,12 +17,12 @@ public class LoginController {
     private LoginProcessor loginProcessor;
 
     @GetMapping("/")
-    String loginGet() {
+    public String loginGet() {
         return "ch9ex2_login.html";
     }
 
     @PostMapping("/")
-    String loginPost(@RequestParam String username,
+    public String loginPost(@RequestParam String username,
                      @RequestParam String password,
                      Model model) {
         loginProcessor.setUsername(username);

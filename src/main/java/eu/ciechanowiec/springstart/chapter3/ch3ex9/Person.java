@@ -6,13 +6,13 @@ import org.springframework.stereotype.Component;
  * @author Herman Ciechanowiec
  */
 @Component
-class Person {
+public class Person {
 
     private final String name = "Ella";
 
     private final Parrot parrot;
 
-    Person(Parrot parrot2) {
+    public Person(Parrot parrot2) {
         this.parrot = parrot2;
     }
 

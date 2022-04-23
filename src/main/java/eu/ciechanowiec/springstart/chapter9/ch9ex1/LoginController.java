@@ -11,18 +11,18 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author Herman Ciechanowiec
  */
 @Controller
-class LoginController {
+public class LoginController {
 
     @Autowired
     private LoginProcessor loginProcessor;
 
     @GetMapping("/")
-    String loginGet() {
+    public String loginGet() {
         return "ch9ex1_login.html";
     }
 
     @PostMapping("/")
-    String loginPost(@RequestParam String username,
+    public String loginPost(@RequestParam String username,
                      @RequestParam String password,
                      Model model) {
         loginProcessor.setUsername(username);

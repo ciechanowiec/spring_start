@@ -16,5 +16,4 @@ public class Main {
         app.setDefaultProperties(Collections.singletonMap("server.port", "9090"));
         app.run(args);
     }
-
 }

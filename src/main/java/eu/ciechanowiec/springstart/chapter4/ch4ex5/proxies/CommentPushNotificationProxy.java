@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @Primary
-class CommentPushNotificationProxy implements CommentNotificationProxy {
+public class CommentPushNotificationProxy implements CommentNotificationProxy {
 
     @Override
     public void sendComment(Comment comment) {

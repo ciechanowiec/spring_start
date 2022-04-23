@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author Herman Ciechanowiec
  */
 @Controller
-class MainController {
+public class MainController {
 
     @RequestMapping("/home")
-    String home(@RequestParam String color, Model page) {
+    public String home(@RequestParam String color, Model page) {
         page.addAttribute("username", "Katy");
         page.addAttribute("color", color);
         return "ch8ex2_home.html";
