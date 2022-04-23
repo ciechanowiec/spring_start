@@ -1,4 +1,4 @@
-package eu.ciechanowiec.springstart.chapter13.ch13ex1;
+package eu.ciechanowiec.springstart.chapter13.ch13ex2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
